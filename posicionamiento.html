@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background: peachpuff;
+            position: relative;
+            top: 20px;
+        }
+
+        .item {
+            width: 20px;
+            height: 20px;
+            background: hotpink;
+            position: absolute;  /* solo se mueve dentro de la caja papa*/
+            right: 0;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background: lightcyan;
+            position: fixed;    /* se queda fijo en la pantalla, aunque hagamos scroll */
+            top: 0;
+        }
+
+        ul p {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum nisi tellus, fermentum elementum justo efficitur tempus. Nulla nec lectus eget elit imperdiet lobortis vitae sit amet libero. Nulla varius pulvinar turpis, sed pellentesque tortor facilisis non. In sit amet interdum turpis, non lacinia neque. Morbi venenatis a libero et luctus. Morbi posuere in ligula vitae laoreet. Phasellus sit amet urna velit. Maecenas convallis efficitur turpis, ac lobortis nibh ornare sed. Vestibulum volutpat erat sit amet quam aliquam lobortis. Proin at elementum nunc. Maecenas porta pellentesque auctor. Etiam volutpat vehicula imperdiet. Pellentesque rutrum urna interdum ligula pellentesque placerat. Cras laoreet iaculis iaculis. Vestibulum vitae ornare lacus.
+
+Nunc mollis, urna a dignissim efficitur, lacus orci feugiat nibh, quis rutrum sapien orci vel tortor. In quis ullamcorper lacus, sit amet vehicula ex. Curabitur sit amet arcu tincidunt nisl facilisis consectetur. Vestibulum ac auctor justo. Pellentesque vel eros non mi faucibus dictum. Vivamus sed nulla iaculis est consectetur pharetra non at velit. Morbi imperdiet ex vel leo venenatis volutpat. Praesent vulputate egestas est, elementum ultricies ipsum aliquam vel. Vestibulum dictum eu arcu nec vulputate. Proin vulputate nunc eget tellus mattis, lacinia rutrum nisl gravida. Integer id pellentesque nisi. Vestibulum in purus tellus.
+
+Proin at felis sollicitudin, vestibulum erat nec, ultrices ante. Aliquam vitae cursus diam. Donec condimentum sem at mattis sollicitudin. Vivamus pretium augue tellus, et ornare orci suscipit sit amet. Aliquam ac mattis tellus. Mauris in congue lectus. Aliquam elementum urna justo, et ullamcorper augue pharetra vitae. Sed feugiat vestibulum tempor. Cras aliquet, ante interdum iaculis sagittis, augue nulla faucibus turpis, a pretium lectus diam quis lorem. Sed quis pulvinar urna, vitae lobortis ipsum.
+
+Nulla tristique nisi quis ante dignissim, eu tincidunt purus condimentum. Suspendisse rhoncus at nisi ac tincidunt. Pellentesque id metus at nunc congue elementum. Vestibulum euismod finibus libero, id commodo elit molestie eu. Nam pulvinar ultrices ipsum. Fusce vel congue sapien. Nunc lacinia risus ac dui maximus pharetra. Vivamus non egestas libero. Pellentesque sollicitudin est neque, sed fringilla mauris tempus eget. Donec ac placerat ipsum.
+
+Sed ut tincidunt nunc. Maecenas id eleifend lectus. Integer mattis mi id maximus vestibulum. Vestibulum auctor bibendum auctor. Aliquam pharetra nunc blandit ipsum tristique bibendum. Proin ut accumsan dolor. Integer consectetur feugiat convallis. Quisque ultricies est lobortis placerat vestibulum. Quisque lacinia egestas nisi, eget laoreet augue maximus ut. Nullam tempor accumsan tincidunt.
+
+Ut quis libero enim. Vestibulum vel erat in metus interdum porta ut id ex. Vestibulum ac nisl ut quam vulputate venenatis ut ac massa. Donec volutpat augue id odio molestie lacinia. Donec rhoncus nisl et nibh ultricies, non pulvinar urna luctus. Nulla vitae lorem lobortis, ultrices nisi id, dignissim nibh. Aenean fringilla, velit vel cursus finibus, enim nisi rhoncus quam, ut varius sem metus scelerisque ex. Mauris sed lacus eu elit viverra pulvinar. Nam semper venenatis mollis. Suspendisse eget semper nisl. Donec pretium sem justo, sit amet rutrum eros iaculis ac. In fermentum molestie nisl eget consequat.
+
+Mauris tempor sem et est scelerisque, vel elementum erat convallis. Suspendisse a rutrum lacus. Quisque lorem metus, lacinia sed aliquam sed, dignissim a lacus. In malesuada purus ultrices aliquam feugiat. Pellentesque consequat cursus orci. Praesent rhoncus, purus iaculis maximus maximus, ligula ipsum blandit metus, eu ultrices odio tortor non ipsum. Donec cursus nisl sapien, quis tristique turpis semper vel. Morbi vel est ligula. Aliquam dapibus laoreet nisl, sed dignissim lacus ornare tincidunt. In magna nisl, laoreet lacinia ante et, commodo fringilla tortor. Morbi tincidunt ante et auctor finibus. In vel nisl fermentum, laoreet ante nec, sagittis quam. Duis porta tellus vitae lorem bibendum, at viverra libero viverra.
+
+Morbi et massa ac turpis molestie tincidunt et ac enim. Aenean velit dolor, semper vitae faucibus in, elementum a massa. Pellentesque dapibus in turpis ornare auctor. Aliquam tincidunt arcu sed porttitor placerat. Nullam eu luctus leo. Suspendisse potenti. Donec molestie sapien nec viverra bibendum. Vestibulum suscipit sit amet enim in maximus. Integer aliquam ex sed mi cursus, nec sodales lectus placerat. Donec consequat lacus non lacinia aliquet. Donec consectetur gravida gravida. Nullam ut cursus magna. Quisque eu convallis risus. Duis malesuada est vitae tristique placerat.
+    </p>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frute</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Naranja</li>
+    </ul>
+</body>
+</html>
